@@ -125,10 +125,23 @@ status text: OK
 
 ### Sytem Testing
 
+For system integration testing, we could test out DREATE method for our prject, and check that the output from our READ method is expected.
 
+Alternatively, we could 'black-box' system test by using the front end to create an item and reading the page to make sure that new product has been created. 
 
+npm start, create and item and post it. cheack the iem is created. 
 
+### User Acceptance testing
 
+*As a* user
+*When* I enter a product ID into the delete field and press the delete button
+*I want* the item to be deleted
+
+*GIVEN* a user can access the front-end of the application
+*WHEN* they input an id into the delete item input
+*AND* an item with the id exists
+*AND* they press the delete item button
+*THEN* that item is deleted from the database
 
 
 

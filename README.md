@@ -87,3 +87,57 @@ $ curl -s -X DELETE http://localhost:8080/delete/<id>
 n.b: For these commands anything surrounded by angled braces <> needs to be replaced by you
 
 ---
+
+## Testing
+
+To run tests on this project, use te command
+~~~ bash
+$ npm test
+~~~
+
+### Example tests
+
+### unit
+
+There is a unit test included in this project, we are testing the item builder for the objects for the object it returns.
+
+If we test the builder and iput a name of 'item',
+a descrition of 'test description', a price of 99 and an id of 4... 
+we can expect an object to be created that matches this format.
+
+~~~ javascript
+(
+    name: "item",
+    description : "test description",
+    price : 99,
+    _id : 4
+)
+~~~
+
+### Integration test
+
+An example integration test that we can create for this roject is to test the RESTful endpoints.
+
+If we test the delte endpoint by sending a request with a method of 'DELTE' and a path of '/delete/1' we should expect a response to be:
+
+status code: 200,
+status text: OK
+
+### Sytem Testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
